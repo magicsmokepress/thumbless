@@ -65,6 +65,27 @@ below accordingly:
 Either way the firmware just uses `Serial`, so only the board setting needs to
 match your cabling.
 
+## Quick flash — no Arduino IDE (recommended)
+
+Don't want to build anything? Grab the prebuilt firmware from
+**[Releases](https://github.com/magicsmokepress/thumbless/releases/latest)** and
+flash it from your browser — no toolchain, no compiling.
+
+1. Download **`thumbless-v1.0.0-esp32c3.factory.bin`** from the latest release.
+2. Plug the ESP32‑C3 in over USB and open **Chrome or Edge** (WebSerial isn't in
+   Firefox/Safari).
+3. Go to the **[Adafruit Web ESPTool](https://adafruit.github.io/Adafruit_WebSerial_ESPTool/)**,
+   set baud **115200**, **Connect**, and pick the board's port.
+4. Load the `.bin` at offset **`0x0`** (it's a merged factory image, so that's the
+   only entry needed) → **Program** → reset the board.
+
+Prefer the command line? `esptool.py --chip esp32c3 write_flash 0x0 thumbless-v1.0.0-esp32c3.factory.bin`
+
+> **Not ESPHome:** `web.esphome.io` won't flash this — use any generic WebSerial
+> ESPTool page like the Adafruit one above.
+
+Want to build it yourself instead? Read on.
+
 ## 2. Flash the firmware
 
 ### Arduino IDE
