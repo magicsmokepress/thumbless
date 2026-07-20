@@ -1,0 +1,10 @@
+{
+  "name": "gamepad",
+  "version": "1.0.0",
+  "description": "Drive the thumbless ESP32-C3 BLE HID gamepad from an AI agent to play games (e.g. Pong).",
+  "author": {
+    "name": "magicsmokepress",
+    "url": "https://github.com/magicsmokepress"
+  },
+  "homepage": "https://github.com/magicsmokepress/thumbless"
+}
