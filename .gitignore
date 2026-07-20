@@ -1,0 +1,34 @@
+# ---- Build output (firmware) ----
+build/
+*.bin
+*.elf
+*.hex
+*.map
+*.d
+# Arduino / arduino-cli / PlatformIO
+.pio/
+.build/
+*.a
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ---- Packaged archives (regenerate; don't track) ----
+/*.zip
+
+# ---- Editors / IDEs ----
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- OS cruft ----
+.DS_Store
+Thumbs.db

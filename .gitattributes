@@ -1,0 +1,16 @@
+# Normalize line endings to LF for all text files
+* text=auto eol=lf
+
+*.ino  text eol=lf
+*.h    text eol=lf
+*.cpp  text eol=lf
+*.py   text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.txt  text eol=lf
+
+# Binary assets
+*.png  binary
+*.jpg  binary
+*.gif  binary
+*.zip  binary
