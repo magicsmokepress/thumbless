@@ -1,6 +1,6 @@
-# Agent BLE Gamepad Simulator (ESP32‑C3)
+# thumbless — a BLE gamepad for AIs that don't have thumbs (ESP32‑C3)
 
-[![build](https://github.com/magicsmokepress/gamepad/actions/workflows/build.yml/badge.svg)](https://github.com/magicsmokepress/gamepad/actions/workflows/build.yml)
+[![build](https://github.com/magicsmokepress/thumbless/actions/workflows/build.yml/badge.svg)](https://github.com/magicsmokepress/thumbless/actions/workflows/build.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![platform](https://img.shields.io/badge/platform-ESP32--C3-blue)
 ![framework](https://img.shields.io/badge/framework-Arduino-teal)
