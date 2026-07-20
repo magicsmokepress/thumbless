@@ -39,6 +39,8 @@ gamepad/
 │   └── requirements.txt            pyserial
 ├── docs/
 │   └── PROTOCOL.md                 Full serial command protocol spec
+├── skills/
+│   └── gamepad/SKILL.md            Agent skill: how an AI agent drives the pad to play
 ├── .github/workflows/build.yml     CI: compile firmware for esp32c3 + byte‑compile host
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
