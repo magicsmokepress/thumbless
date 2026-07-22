@@ -216,6 +216,23 @@ Edit the config block at the top of `firmware/gamepad/gamepad.ino`:
 
 ---
 
+## Prior Art
+
+thumbless is a novel *combination* — a serial-text-protocol-driven hardware BLE
+HID gamepad for AI agents — but every constituent piece has established prior
+work it builds on or sits beside:
+
+- **[ESP32-BLE-Gamepad](https://github.com/lemmingDev/ESP32-BLE-Gamepad)** (lemmingDev) — the BLE HID gamepad library this firmware is built on. *Dependency & primary prior art.*
+- **[NimBLE-Arduino](https://github.com/h2zero/NimBLE-Arduino)** (h2zero) — the lightweight BLE stack underneath it. *Dependency.*
+- **[DashboardKeyboard](https://github.com/Calebe94/DashboardKeyboard)** — ESP32 firmware exposing a BLE HID *keyboard/mouse* driven by a host over a line-based serial protocol. *Closest same-approach prior art (different HID type).*
+- **[espjoy](https://github.com/scottlawsonbc/espjoy)** / **[ESP32_GAMEPAD](https://github.com/deonvdw/ESP32_GAMEPAD)** — ESP32 BLE HID gamepads driven by physical inputs. *Adjacent predecessors.*
+- **[vgamepad](https://github.com/yannbouteiller/vgamepad)** (+ **[ViGEm](https://github.com/ViGEm)**) — software emulation of Xbox/DualShock pads a program drives into games. *Software analogue.*
+- **[GamingAgent](https://github.com/lmgame-org/GamingAgent)** — LLM/VLM agents that play games via emulated input. *Adjacent use-case (software input vs. a hardware BLE controller).*
+
+What thumbless does differently: the controller is a real, standards-compliant
+BLE HID peripheral, so any host pairs with it as an ordinary gamepad while an
+agent drives it over serial — no host-side driver or software emulation.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
